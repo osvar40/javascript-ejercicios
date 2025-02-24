@@ -1,3 +1,4 @@
+//actividad en clase
 /*Una tienda ofrece un 25% de descuento por cada compra. Un cliente desea
 saber cuánto deberá pagar por su compra.*/
 let precio = prompt("Introduce el precio de la compra:");
