@@ -193,7 +193,7 @@ for (let i = 1; i <= 10; i++) {
 }
 */
 //Ejercicio 
-/*Programa que dada la edad de una persona indique si es mayor o menor deedad. Se considera mayor de edad a partir de los 18 años.*/
+/*Programa que dada la edad de una persona indique si es mayor o menor deedad. Se considera mayor de edad a partir de los 18 años.
 // Solicitar la edad de la persona
 let edad = prompt("Por favor, ingresa tu edad:");
 
@@ -207,7 +207,7 @@ if (edad >= 18) {
     console.log("Eres menor de edad.");
 }
 //Ejercicio 3//
-/*Dado dos números A y B, determinar si A es mayor, menor o igual que B*/
+/*Dado dos números A y B, determinar si A es mayor, menor o igual que B
 // Solicitar los dos números A y B
 let A = parseFloat(prompt("Ingresa el primer número (A):"));
 let B = parseFloat(prompt("Ingresa el segundo número (B):"));
@@ -227,7 +227,7 @@ a) Si el peso es menor o igual a 40 Kg. Muestre mensaje: Persona Baja de
 Peso;
 b) Si el peso es entre 41 y 70 Kg. Muestre el mensaje: Persona peso
 promedio;
-c) Si el peso es mayor a 71 Kg. Muestre el mensaje: “Persona con sobrepeso”*/
+c) Si el peso es mayor a 71 Kg. Muestre el mensaje: “Persona con sobrepeso”
 // Solicitar el peso de la persona
 let peso = parseFloat(prompt("Ingresa el peso de la persona en Kg:"));
 
@@ -242,7 +242,7 @@ if (peso <= 40) {
 //Ejercicio 7//
 /*En un almacén se hace un 20% de descuento a los clientes cuya compra
 supere los $1000, a los demás solo se les hace un 5% de descuento ¿ Cuál
-será la cantidad que pagara una persona por su compra?*/
+será la cantidad que pagara una persona por su compra?
 function calcularTotalPago() {
     // Leer el valor de la compra
     let compra = parseFloat(prompt("Ingrese el monto de su compra:"));
@@ -271,7 +271,7 @@ calcularTotalPago();
 
 //Ejercicio 9//
 /*Programa que lea los nombres y edades de dos personas e imprima cuál de
-ellas tiene más edad.*/
+ellas tiene más edad.
 function compararEdades() {
     // Pedir los datos de las dos personas
     let nombre1 = prompt("Ingrese el nombre de la primera persona:");
@@ -294,7 +294,7 @@ function compararEdades() {
 compararEdades();
 //Ejercicio 11/
 /*11.Leer 2 números; si son iguales que los multiplique, si el primero es mayor
-que el segundo que los reste y si no que los sume.*/
+que el segundo que los reste y si no que los sume.
 function operarNumeros() {
     // Leer los dos números
     let numero1 = parseInt(prompt("Ingrese el primer número:"));
@@ -318,7 +318,7 @@ function operarNumeros() {
 operarNumeros();
 //Ejercicio 13//
 /*Escribe un programa que determine si un número ingresado por el usuario
-es par o impar.*/
+es par o impar.
 function verificarParImpar() {
     // Leer el número ingresado por el usuario
     let numero = parseInt(prompt("Ingrese un número:"));
@@ -335,7 +335,7 @@ function verificarParImpar() {
 verificarParImpar();
 //Ejercicio 15/
 /*Crea un programa que solicite un número y verifique si es positivo, negativo
-o igual a cero.*/
+o igual a cero.
 function verificarNumero() {
     // Solicitar un número al usuario
     let numero = parseFloat(prompt("Ingrese un número:"));
@@ -355,7 +355,7 @@ verificarNumero();
 //Ejercicio 17//
 /*17.Escribe un programa que permita al usuario seleccionar una figura
 geométrica (triángulo y cuadrado) y luego calcule el área de esa figura
-ingresando los datos necesarios para cada caso.*/
+ingresando los datos necesarios para cada caso.
 function calcularAreaFigura() {
     // Solicitar al usuario que seleccione una figura geométrica
     let figura = prompt("Seleccione una figura geométrica: Triángulo o Cuadrado").toLowerCase();
@@ -392,7 +392,7 @@ calcularAreaFigura();
 //Ejercicio 19//
 /*Diseña un programa que solicite el nombre de un usuario y su contraseña. Si
 el nombre es "admin" y la contraseña es "12345", muestra un mensaje de
-acceso concedido; de lo contrario, muestra un mensaje de acceso denegado.*/
+acceso concedido; de lo contrario, muestra un mensaje de acceso denegado.
 function verificarAcceso() {
     // Solicitar el nombre de usuario
     let nombreUsuario = prompt("Ingrese su nombre de usuario:");
@@ -402,7 +402,7 @@ function verificarAcceso() {
 
     // Verificar si el nombre de usuario y la contraseña son correctos
     if (nombreUsuario === "admin" && contrasena === "12345") {
-        console.log("Acceso concedido.");
+        console.log ("Acceso concedido.");
     } else {
         console.log("Acceso denegado.");
     }
@@ -410,20 +410,245 @@ function verificarAcceso() {
 
 // Llamar a la función para ejecutar el programa
 verificarAcceso();
+if 
+//FUNCIONES 
+
+function saludar(){
+    document.write("Probando estas funciones")
+}
+saludar();
 
 
+//Ejerccios
+/*function sumar(){
+    return 6+8;
+}
+    const resultado = sumar();
+    alert(resultado);*/
+
+    /*function getRandomNumber() {
+        // recuperamos un número aleatorio entre 0 y 1
+        const random = Math.random() // por ejemplo: 0.6803487380457318
+      
+        // lo multiplicamos por 10 para que esté entre 0 y 10
+        const multiplied = random * 10 // -> 6.803487380457318
+      
+        // redondeamos hacia abajo para que esté entre 0 y 9
+        const rounded = Math.floor(multiplied) // -> 6
+      
+        // le sumamos uno para que esté entre 1 y 10
+        const result = rounded + 1 // -> 7
+      
+        // devolvemos el resultado
+        return result
+      }
+      function saludar(nombre) {
+        alert("Hola" + nombre);
+
+      }
+      saludar("juan");*/
+
+      //1.FUNCIONES
+      Conceptualización:
+//Una función es un bloque de código diseñado para realizar una tarea específica.Puede recibir valores de entrada, llamados parámetros, y devolver un resultado. 
+// Declaración de una función simple
+function saludar(nombre) {
+  console.log(`¡Hola, ${nombre}!`);
+}
+// Llamada a la función
+saludar("OSCAR");  // Salida: ¡Hola, OSCAR!
+ 
+/*1. Funciones con valor de retorno
+Estas funciones realizan una tarea y devuelven un valor. El valor de retorno se especifica con la palabra clave return.
+Se utilizan cuando queremos que una función haga un cálculo o una operación y nos devuelva el resultado para usarlo más tarde.*/
+
+// Función con valor de retorno
+function sumar(a, b) {
+  return a + b;
+}
+let resultado = sumar(3, 4);
+console.log(resultado); // 7
 
 
+/*2. Funciones anónimas
+Son funciones que no tienen un nombre. Se pueden usar para ser pasadas como argumentos a otras funciones o asignarlas a variables.*/
+
+// Función anónima asignada a una variable
+let multiplicar = function(a, b) {
+  return a * b;
+};
+
+console.log(multiplicar(2, 5)); // 10
+/*3. Funciones flecha 
+Son una forma más compacta de escribir funciones en JavaScript. Usan la sintaxis () => 
+Son útiles cuando queremos escribir funciones de manera más concisa, especialmente para tareas simples o funciones callback.*/
+
+// Función flecha
+const dividir = (a, b) => a / b;
+
+console.log(dividir(10, 2)); // 5
+/*4. Funciones recursivas
+Una función recursiva es aquella que se llama a sí misma en su propio cuerpo. 
+Es útil para resolver problemas que se dividen en subproblemas más pequeños, como en el caso de estructuras de datos como árboles o problemas matemáticos.
+Se usan cuando un problema puede descomponerse en subproblemas similares y se quiere resolver de forma repetitiva, como al calcular.*/
+
+// Función recursiva para calcular el factorial de un número
+function factorial(n) {
+  if (n === 0) {
+    return 1; // Caso base
+  } else {
+    return n * factorial(n - 1); // Llamada recursiva
+  }
+}
+
+console.log(factorial(5)); // 120
+
+/*2.Arreglos (Arrays) en JavaScript
+Un arreglo (o array) es una estructura de datos que permite almacenar múltiples valores en una sola variable. 
+Los arreglos en JavaScript son dinámicos y pueden contener diferentes tipos de datos (números, cadenas, objetos, etc.).*/
+
+// Definición de un arreglo con números
+let numeros = [1, 2, 3, 4, 5];
+
+console.log(numeros); // Imprime [1, 2, 3, 4, 5]
+
+/*1. Cadena (String)
+¿Para qué sirve?
+Una cadena (o string) en JavaScript es una secuencia de caracteres que se utiliza para representar texto. 
+Las cadenas pueden ser definidas entre comillas simples (' ') o dobles (" "), y se pueden manipular de varias maneras.*/
+
+// Definición de una cadena
+let saludo = "Hola, ¿cómo estás?";
+
+console.log(saludo); // Imprime: Hola, ¿cómo estás?
+
+/*2. Booleano (Boolean)
+El tipo de dato Boolean en JavaScript tiene solo dos valores posibles: true (verdadero) o false (falso). 
+Se utiliza principalmente para realizar comparaciones y controlar el flujo de ejecución (condiciones y bucles).*/
+
+// Definición de un valor booleano
+let esMayorDeEdad = true; // true significa que la persona es mayor de edad
+
+console.log(esMayorDeEdad); // Imprime: true
+
+/*3. Número (Number)
+¿Para qué sirve?
+El tipo de dato Number representa valores numéricos, tanto enteros como decimales. JavaScript maneja un solo tipo de número para enteros y flotantes, lo cual es conveniente para cálculos.*/
+
+let a = 10;
+let b = 5;
+
+// Sumar
+let suma = a + b;
+console.log(suma); // Imprime: 15
+
+// Restar
+let resta = a - b;
+console.log(resta); // Imprime: 5
+
+// Multiplicar
+let multiplicacion = a * b;
+console.log(multiplicacion); // Imprime: 50
+
+// Dividir
+let division = a / b;
+console.log(division); // Imprime: 2
+/*4. Objetos (Object)
+Un objeto en JavaScript es una colección de propiedades y métodos que se agrupan bajo un mismo nombre.
+ Un objeto puede contener diferentes tipos de datos, como cadenas, números, arreglos, y otros objetos.*/
+
+// Definición de un objeto con propiedades y métodos
+let persona = {
+  nombre: "oscar",
+  edad: 18,
+  esEstudiante: false,
+  
+  // Método del objeto
+  saludar: function() {
+    console.log("¡Hola, mi nombre es " + this.nombre + "!");
+  }
+};
+
+console.log(persona.nombre); // Imprime: Oscar
+console.log(persona.edad); // Imprime: 18
+persona.saludar(); // Imprime: ¡Hola, mi nombre es oscar!
+
+/*3. Programación Orientada a Objetos (OOP)
+La Programación Orientada a Objetos , es un paradigma que organiza el código en objetos.
+ Un objeto es una instancia de una clase que puede contener propiedades y métodos. Esto permite la reutilización de código y la creación de software más modular y escalable.*/
+
+// Definir una clase "Persona"
+class Persona {
+  constructor(nombre, edad) {
+    this.nombre = nombre; // Propiedad
+    this.edad = edad; // Propiedad
+  }
+
+  // Método para saludar
+  saludar() {
+    console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
+  }
+}
+
+// Crear una nueva instancia de Persona
+const persona1 = new Persona("oscar", 18);
+persona1.saludar(); // Imprime: Hola, mi nombre es Oscar y tengo  18 años.
+
+ /*4. Manejo de Evento y el DOM (Document Object Model)
+El DOM es una interfaz de programación para documentos HTML y XML. Permite acceder y modificar el contenido, 
+estructura y estilo de una página web mediante JavaScript. Los eventos son acciones o sucesos que ocurren en el navegador, como hacer clic en un botón,
+ mover el mouse, presionar una tecla, entre otros.*/
+// Agregar un evento de clic a un botón
+const boton = document.getElementById("miBoton");
+boton.addEventListener("click", function() {
+  alert("¡Botón clickeado!");
+});
+
+/*5. Módulos
+Conceptualización:
+Los módulos en JavaScript permiten dividir el código en archivos más pequeños, lo que facilita la organización y mantenimiento del código. 
+Se pueden importar y exportar funciones, objetos y variables entre diferentes archivos.*/
 
 
+  
+  
+/*6. Programación Asíncrona
+Conceptualización:
+La programación asíncrona permite realizar tareas en segundo plano sin bloquear la ejecución del resto del código.
+ Esto es especialmente útil para manejar operaciones como la lectura de archivos, peticiones HTTP y temporizadores. En JavaScript, 
+ se utilizan promesas, async/await y callbacks para manejar la asincronía.*/
 
+// Crear una promesa que se resuelve después de 2 segundos
+let promesa = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Operación completada");
+  }, 2000);
+});
 
+// Usar la promesa
+promesa.then((resultado) => {
+  console.log(resultado); // Imprime: Operación completada
+});
 
+/*6. Programación Asíncrona
+Concepto:
+La programación asíncrona permite ejecutar tareas sin bloquear el hilo principal de ejecución, 
+lo que es útil para tareas largas, como solicitudes HTTP o operaciones en bases de datos. */
 
+// Función que devuelve una promesa
+function obtenerDatos() {
+  return new Promise((resolve, reject) => {
+    let exito = true; // Simulamos una condición de éxito
+    if (exito) {
+      resolve('Datos recibidos correctamente');
+    } else {
+      reject('Error al recibir los datos');
+    }
+  });
+}
 
-
-
-
-
+obtenerDatos()
+  .then((mensaje) => console.log(mensaje)) // Si la promesa se resuelve
+  .catch((error) => console.log(error));  // Si la promesa es rechazada
 
 
